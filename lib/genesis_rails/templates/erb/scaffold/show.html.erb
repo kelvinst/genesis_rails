@@ -1,0 +1,25 @@
+<h1 class="text-center mb5">
+  <%= singular_table_name.titleize %> - <%%= @<%= singular_table_name %> %>
+</h1>
+
+<div class="text-center mb15">
+  <%%= link_to 'Edit', edit_<%= singular_table_name %>_path(@<%= singular_table_name %>) %> |
+  <%%= link_to 'Back', <%= index_helper %>_path %>
+</div>
+
+<div class="col-xs-10 col-xs-offset-1
+  col-sm-8 col-sm-offset-2
+  col-md-6 col-md-offset-3
+  col-lg-4 col-lg-offset-4">
+  <div class="panel">
+    <div class="panel-body">
+<% attributes.reject(&:password_digest?).each do |attribute| -%>
+      <p>
+        <strong><%= attribute.human_name %>:</strong>
+        <%%= @<%= singular_table_name %>.<%= attribute.name %> %>
+      </p>
+<% end -%>
+    </div>
+  </div>
+</div>
+
