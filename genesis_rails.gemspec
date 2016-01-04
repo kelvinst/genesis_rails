@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = GenesisRails::VERSION
   s.authors     = ["kelvinst"]
   s.email       = ["kelvin.stinghen@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of GenesisRails."
-  s.description = "TODO: Description of GenesisRails."
+  s.homepage    = "https://github.com/kelvinst/genesis_rails"
+  s.summary     = "A complete set of tools for building rails applications"
+  s.description = "A complete set of tools for building rails applications"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
