@@ -24,7 +24,7 @@ class <%= controller_class_name %>Controller < AuthenticatedController
 
   def create
     @<%= singular_table_name %> = <%= orm_class.build(class_name, "#{singular_table_name}_params") %>
-    BasicServices::Create.new(@<%= singular_table_name %>).execute
+    <%= class_name %>Services::Create.new(@<%= singular_table_name %>).execute
 
     respond_with @<%= singular_table_name %>
   end
@@ -32,14 +32,14 @@ class <%= controller_class_name %>Controller < AuthenticatedController
   def update
     load_<%= singular_table_name %>
     @<%= singular_table_name %>.attributes = <%= singular_table_name %>_params
-    BasicServices::Update.new(@<%= singular_table_name %>).execute
+    <%= class_name %>Services::Update.new(@<%= singular_table_name %>).execute
 
     respond_with @<%= singular_table_name %>
   end
 
   def destroy
     load_<%= singular_table_name %>
-    BasicServices::Destroy.new(@<%= singular_table_name %>).execute
+    <%= class_name %>Services::Destroy.new(@<%= singular_table_name %>).execute
 
     respond_with @<%= singular_table_name %>
   end
