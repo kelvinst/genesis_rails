@@ -1,0 +1,12 @@
+Description:
+    Create empty service classes inheriting from the basic services.
+
+Example:
+    rails generate services Thing
+
+    This will create:
+        Create service: app/services/thing_services/create.rb
+        Update service: app/services/thing_services/update.rb
+        Destroy service: app/services/thing_services/destroy.rb
+        Service helper: app/services/thing_services/helper.rb
+
