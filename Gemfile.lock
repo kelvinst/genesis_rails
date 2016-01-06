@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    genesis_rails (0.0.5)
+    genesis_rails (0.0.6)
       rails (~> 4.2)
       responders (~> 2.1)
       rspec-rails (~> 3.4)
