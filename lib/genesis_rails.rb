@@ -1,8 +1,6 @@
 require "genesis_rails/engine"
 require "genesis_rails/railtie"
-require "genesis_rails/services/create"
-require "genesis_rails/services/update"
-require "genesis_rails/services/destroy"
+require "genesis_rails/service"
 
 module GenesisRails
 end
