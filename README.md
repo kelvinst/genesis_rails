@@ -22,6 +22,7 @@ should work:
 ```ruby
 gem 'genesis_rails'
 gem 'responders'
+gem 'simple_form'
 
 group :test do
   gem "rspec"

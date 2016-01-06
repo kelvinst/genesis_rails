@@ -5,7 +5,7 @@
   <div class="panel">
     <div class="panel-body">
       <%%= simple_form_for(@<%= singular_table_name %>) do |f| %>
-        <%%= form_errors_for @<%= singular_table_name %> %>
+        <%%= f.error_notification %>
 
         <div class="form-inputs">
 <%- attributes.each do |attribute| -%>

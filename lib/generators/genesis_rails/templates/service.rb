@@ -1,5 +1,5 @@
 <% module_namespacing do -%>
-class <%= class_name.pluralize %>Service < GenesisRails::Service
+class <%= class_name.pluralize %>Service < GenesisRails::Services::CRUD
   # you can overwrite these methods if you want to do something more when you
   # are dealing with the <%= class_name %> model
   # def create

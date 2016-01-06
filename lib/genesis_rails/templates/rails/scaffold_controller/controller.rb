@@ -1,9 +1,9 @@
 <% if namespaced? -%>
-require_dependency "<%= namespaced_path %>/authenticated_controller"
+require_dependency "<%= namespaced_path %>/application_controller"
 
 <% end -%>
 <% module_namespacing do -%>
-class <%= controller_class_name %>Controller < AuthenticatedController
+class <%= controller_class_name %>Controller < ApplicationController
   respond_to :html
 
   def index
