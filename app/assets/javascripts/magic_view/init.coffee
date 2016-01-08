@@ -1,16 +1,13 @@
-class ApplicationView
-  render: ->
-    # do nothing, just overwrite this to do something
-
-  cleanup: ->
-    # do nothing, just overwrite this to do something
-
 pageLoad = ->
-  className = $('body').attr('data-js-class-name')
+  actionClassName = $('body').data('action-view')
   window.currentView = try
-    eval("new #{className}()")
+    eval("new #{actionClassName}()")
   catch error
-    new ApplicationView()
+    controllerClassName = $('body').data('controller-view')
+    window.currentView = try
+      eval("new #{controllerClassName}()")
+    catch error
+      new MagicView()
   window.currentView.render()
 
 $ ->
