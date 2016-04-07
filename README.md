@@ -69,6 +69,26 @@ prefer.
 It's important to remember that this needs to be recopied everytime there is a
 update on them.
 
+## How to update
+
+Well, that's a long story. Depends of course on how many things are you updating
+at once, but I would recommend update all of them separetedly. So:
+
+```bash
+bundle update genesis_rails
+```
+
+After that, you'll be able to just:
+
+
+```bash
+rails g genesis_rails:copy_templates
+```
+
+This, of course, can have changes dependeding on which is the update and take
+attention to your changes to the templates you've copied. Choose wisely if you
+want or not the new version. :stuck_out_and_tongue:
+
 ## Recommended configuration
 
 Follows some recommended configuration for your application if you are using
