@@ -2,7 +2,7 @@ require 'rails/generators'
 module GenesisRails
   class InstallGenerator < Rails::Generators::Base
     def self.source_root
-      @source_root ||= File.expand_path('../files', __FILE__)
+      @source_root ||= GenesisRails::Engine.root.join "lib/generators/genesis_rails/install/files"
     end
 
     def install_files
