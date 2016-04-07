@@ -24,22 +24,21 @@ class <%= controller_class_name %>Controller < ApplicationController
 
   def create
     @<%= singular_table_name %> = <%= orm_class.build(class_name, "#{singular_table_name}_params") %>
-    <%= controller_class_name %>Service.new(@<%= singular_table_name %>).create
+    @<%= orm_instance.save %>
 
     respond_with @<%= singular_table_name %>
   end
 
   def update
     load_<%= singular_table_name %>
-    @<%= singular_table_name %>.attributes = <%= singular_table_name %>_params
-    <%= controller_class_name %>Service.new(@<%= singular_table_name %>).update
+    @<%= orm_instance.update("#{singular_table_name}_params") %>
 
     respond_with @<%= singular_table_name %>
   end
 
   def destroy
     load_<%= singular_table_name %>
-    <%= controller_class_name %>Service.new(@<%= singular_table_name %>).delete
+    @<%= orm_instance.destroy %>
 
     respond_with @<%= singular_table_name %>
   end
