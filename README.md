@@ -4,9 +4,22 @@ GenesisRails is a warehouse for templates and initial configurations for
 brand new rails project with the minimum needed for a quick development
 environment.
 
+## Pre requisites
+
+So, there is no explicit pre requisite to install this gem and use it in your
+rails project. But I actually recommend to be running with `rails ~> 4.2`,
+`ruby ~> 2.2`, `postgres` (any version) aaaaaaand, if you are creating your
+project now, to create it with the following command:
+
+```bash
+rails new my_project -T -d postgresql
+```
+
+That's it!
+
 ## Install
 
-So to intall this project, first, you need to add the following to your Gemfile:
+To intall this project, first, you need to add the following to your Gemfile:
 
 ```ruby
 gem 'genesis_rails'
@@ -49,8 +62,12 @@ And finally:
 rails g genesis_rails:copy_templates
 ```
 
-This will copy all the default templates into your rails project. It's important
-to remember that this needs to be recopied everytime there is a update on them.
+This will copy all the default templates into your rails project, and may have
+conflicts with other gems. If so, just diff them and choose which one you
+prefer.
+
+It's important to remember that this needs to be recopied everytime there is a
+update on them.
 
 ## Recommended configuration
 

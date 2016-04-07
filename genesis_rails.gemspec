@@ -21,10 +21,5 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 4.2"
 
-  s.add_dependency "coffee-rails", "~> 4.1"
-  s.add_dependency "rspec-rails", "~> 3.4"
-  s.add_dependency "simple_form", "~> 3.2"
-  s.add_dependency "responders", "~> 2.1"
-
   s.add_development_dependency "pry", "~> 0.10"
 end
