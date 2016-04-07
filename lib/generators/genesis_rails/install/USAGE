@@ -2,7 +2,7 @@ Description:
     Copy all the overrided templates by genesis
 
 Example:
-    rails generate services Thing
+    rails generate genesis_rails:install
 
     This will create: a lot of template files for a lot of generators
 

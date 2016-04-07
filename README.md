@@ -59,7 +59,7 @@ rails g rspec:install
 And finally:
 
 ```bash
-rails g genesis_rails:copy_templates
+rails g genesis_rails:install
 ```
 
 This will copy all the default templates into your rails project, and may have
@@ -82,7 +82,7 @@ After that, you'll be able to just:
 
 
 ```bash
-rails g genesis_rails:copy_templates
+rails g genesis_rails:install
 ```
 
 This, of course, can have changes dependeding on which is the update and take
@@ -133,6 +133,9 @@ genesis:
   config.after(:each) do
     DatabaseCleaner.clean
   end
+
+# in the same file (spec/rails\_helper.rb), uncomment the following line
+Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 ```
 
 ## TODO
