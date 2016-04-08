@@ -117,9 +117,9 @@ genesis:
       g.factory_girl dir: "spec/factories"
     end
 
-<spec/rails\_helper.rb>
+<spec/rails_helper.rb>
 # uncomment the following line to require the needed support files (one of them
-# is copied on the # genesis\_rails installations)
+# is copied on the genesis_rails installations)
 Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 
 # then change the value of the following config to false (the raise of the code below
