@@ -106,6 +106,9 @@ genesis:
 //= require bootstrap
 //= require magic_view
 
+# then, at the end of file, add the following line to init the magic_view code
+//= require magic_view/init
+
 <config/application.rb>
 # add the following lines to configure the generators properly
     config.generators do |g|
