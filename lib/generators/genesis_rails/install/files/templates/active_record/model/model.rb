@@ -13,7 +13,7 @@ class <%= class_name %> < <%= parent_class_name.classify %>
   end || attributes_to_show.first
 -%>
 <% if title_attribute.present? -%>
-  def to_s
+  def to_title
     <%= title_attribute.name %>
   end
 <% end -%>
