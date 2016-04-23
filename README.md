@@ -53,7 +53,7 @@ list of commands you'll probably need to execute:
 
 ```bash
 rails g kaminari:config
-rails g kaminari:views default
+rails g kaminari:views bootstrap3
 rails g responders:install
 rails g simple_form:install --bootstrap
 rails g rspec:install
