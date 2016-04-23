@@ -23,6 +23,7 @@ To intall this project, first, you need to add the following to your Gemfile:
 
 ```ruby
 gem 'genesis_rails'
+gem 'kaminari'
 gem 'responders'
 gem 'simple_form'
 
@@ -51,6 +52,7 @@ individually. If you are not so interested in reading everyone, here comes a
 list of commands you'll probably need to execute:
 
 ```bash
+rails g kaminari:views default
 rails g responders:install
 rails g simple_form:install --bootstrap
 rails g rspec:install
@@ -177,7 +179,6 @@ Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 
 ## TODO
 
-- [ ] Make that generator become a rake task
-- [ ] Create a template.rb file to use with `rails new -m template.rb`
-- [ ] Make an install generator to install everything that's needed
+- [ ] Make the install generator to configure the project with the above
+recommended configuration
 
