@@ -103,7 +103,7 @@ genesis:
  *= stub scaffolds
  *= require bootstrap
 
-<app/assets/javascripts/applicationjs>
+<app/assets/javascripts/application.js>
 # add the following lines to import the needed bootstrap
 //= require bootstrap
 //= require magic_view
@@ -181,4 +181,7 @@ Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 
 - [ ] Make the install generator to configure the project with the above
 recommended configuration
+- [ ] Create a way to choose which frameworks and helpers to include when
+installing, aaand copy the correct templates and files according on which were
+selected, which not
 
