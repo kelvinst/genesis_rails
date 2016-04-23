@@ -52,6 +52,7 @@ individually. If you are not so interested in reading everyone, here comes a
 list of commands you'll probably need to execute:
 
 ```bash
+rails g kaminari:config
 rails g kaminari:views default
 rails g responders:install
 rails g simple_form:install --bootstrap
