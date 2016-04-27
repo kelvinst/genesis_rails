@@ -3,10 +3,9 @@ require 'rails_helper'
 <% output_attributes = attributes.reject{|attribute| [:datetime, :timestamp, :time, :date].index(attribute.type) } -%>
 RSpec.describe "<%= ns_table_name %>/index", <%= type_metatag(:view) %> do
   before(:each) do
-    assign(:<%= table_name %>, [
-      FactoryGirl.create(:<%= ns_file_name %>),
-      FactoryGirl.create(:<%= ns_file_name %>)
-    ])
+    FactoryGirl.create(:<%= ns_file_name %>)
+    FactoryGirl.create(:<%= ns_file_name %>)
+    assign(:<%= table_name %>, <%= class_name %>.page(1))
   end
 
   it "renders a list of <%= ns_table_name %>" do

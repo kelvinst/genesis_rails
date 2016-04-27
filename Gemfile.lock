@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    genesis_rails (0.1.0)
+    genesis_rails (0.1.1)
       rails (>= 4.2)
 
 GEM
