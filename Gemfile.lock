@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     genesis_rails (0.1.0)
-      rails (~> 4.2)
+      rails (>= 4.2)
 
 GEM
   remote: https://rubygems.org/
