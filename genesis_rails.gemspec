@@ -23,4 +23,10 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency "pry"
   s.add_development_dependency "rspec-rails"
+
+  gem.post_install_message = <<-MESSAGE
+  !    The 'genesis_rails' gem has been deprecated and has been replaced by 'silmarails'.
+  !    See: https://rubygems.org/gems/silmarails
+  !    And: https://github.com/kelvinst/silmarails
+  MESSAGE
 end
